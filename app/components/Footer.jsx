@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       {/* Top Section */}
-      <div className="container mx-auto px-6 md:px-12 lg:px-16 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center lg:text-left">
+      <div className="container mx-auto px-6 md:px-12 lg:px-16 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 text-center lg:text-left">
         {/* About Us */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -22,65 +22,23 @@ const Footer = () => {
           </p>
         </motion.div>
 
-        {/* Quick Links */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="space-y-4"
-        >
-          <h3 className="text-xl font-semibold text-yellow-400">Quick Links</h3>
-          <ul className="space-y-2 text-sm">
-            <li>
-              <a
-                href="#privacy"
-                className="hover:text-yellow-400 transition duration-300"
-              >
-                Privacy Policy
-              </a>
-            </li>
-            <li>
-              <a
-                href="#terms"
-                className="hover:text-yellow-400 transition duration-300"
-              >
-                Terms & Conditions
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                className="hover:text-yellow-400 transition duration-300"
-              >
-                Contact Us
-              </a>
-            </li>
-          </ul>
-        </motion.div>
-
         {/* Social Media */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           className="flex flex-col items-center lg:items-start space-y-4"
         >
           <h3 className="text-xl font-semibold text-yellow-400">Follow Us</h3>
           <div className="flex space-x-6">
             <a
-              href="#"
+              href="https://www.linkedin.com/company/loyanox/"
               className="text-white hover:text-yellow-400 transition duration-300"
             >
               <Linkedin size={28} />
             </a>
             <a
-              href="#"
-              className="text-white hover:text-yellow-400 transition duration-300"
-            >
-              <Twitter size={28} />
-            </a>
-            <a
-              href="#"
+              href="https://www.instagram.com/loyanox_official/"
               className="text-white hover:text-yellow-400 transition duration-300"
             >
               <Instagram size={28} />
@@ -99,7 +57,7 @@ const Footer = () => {
             className="text-sm text-gray-400"
           >
             <p>
-              &copy; {new Date().getFullYear()} YourCompany. All Rights
+              &copy; {new Date().getFullYear()} LoyaNox. All Rights
               Reserved.
             </p>
           </motion.div>

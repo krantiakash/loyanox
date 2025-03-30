@@ -23,9 +23,9 @@ const strengths = [
 ];
 
 const statistics = [
-  { value: "100+", label: "Clients" },
-  { value: "10+", label: "Years of Experience" },
-  { value: "50+", label: "Successful Projects" },
+  { value: "10+", label: "Clients" },
+  { value: "8+", label: "Years of Experience" },
+  { value: "20+", label: "Successful Projects" },
 ];
 
 const WhyChooseUs = () => {
