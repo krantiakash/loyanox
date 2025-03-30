@@ -2,7 +2,15 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Code, Briefcase, GraduationCap } from "lucide-react";
+import {
+  Code,
+  Laptop,
+  Layout,
+  Lock,
+  PenTool,
+  Megaphone,
+  BookOpen,
+} from "lucide-react";
 
 const services = [
   {
@@ -11,14 +19,32 @@ const services = [
     icon: <Code size={40} className="text-yellow-400" />,
   },
   {
-    title: "Business Consulting",
-    description: "Providing expert advice to help businesses grow and succeed.",
-    icon: <Briefcase size={40} className="text-yellow-400" />,
+    title: "IT Support & Consulting",
+    description: "Providing ongoing IT support and consulting for businesses.",
+    icon: <Laptop size={40} className="text-yellow-400" />,
   },
   {
     title: "Educational Content",
     description: "Creating high-quality courses and training programs.",
-    icon: <GraduationCap size={40} className="text-yellow-400" />,
+    icon: <BookOpen size={40} className="text-yellow-400" />,
+  },
+  {
+    title: "Cybersecurity",
+    description:
+      "Protecting your business from cyber threats and data breaches.",
+    icon: <Lock size={40} className="text-yellow-400" />,
+  },
+  {
+    title: "UI/UX Design",
+    description:
+      "Designing user-friendly interfaces and seamless user experiences.",
+    icon: <PenTool size={40} className="text-yellow-400" />,
+  },
+  {
+    title: "Digital Marketing",
+    description:
+      "Helping businesses grow through SEO, PPC, and social media strategies.",
+    icon: <Megaphone size={40} className="text-yellow-400" />,
   },
 ];
 

@@ -76,7 +76,8 @@ const Contact = () => {
           <MapPin className="text-yellow-500 mb-3" size={32} />
           <h3 className="text-xl font-semibold mb-2">Address</h3>
           <p className="text-gray-600">
-            Abhiyanta Nagar, Peth Colony, Peth, <br />Maharashtra – 415407, India
+            Abhiyanta Nagar, Peth Colony, Peth, <br />
+            Maharashtra – 415407, India
           </p>
         </motion.div>
       </div>
@@ -84,19 +85,13 @@ const Contact = () => {
       {/* Social Media Icons */}
       <div className="mt-12 flex justify-center space-x-6">
         <a
-          href="#"
-          className="text-yellow-400 hover:text-yellow-500 transition-transform transform hover:scale-110"
-        >
-          <Twitter size={32} />
-        </a>
-        <a
-          href="#"
+          href="https://www.instagram.com/loyanox_official/"
           className="text-yellow-400 hover:text-yellow-500 transition-transform transform hover:scale-110"
         >
           <Instagram size={32} />
         </a>
         <a
-          href="#"
+          href="https://www.linkedin.com/company/loyanox/"
           className="text-yellow-400 hover:text-yellow-500 transition-transform transform hover:scale-110"
         >
           <Linkedin size={32} />
