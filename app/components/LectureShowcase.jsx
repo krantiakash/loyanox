@@ -5,22 +5,19 @@ import Image from "next/image";
 
 const lectures = [
   {
-    title: "Advanced Web Development",
-    description:
-      "Learn the latest web technologies to build modern and scalable applications.",
-    image: "/team.avif",
+    title: "Guest Lecture",
+    description: "Guest lectures at the college by our trained instructors.",
+    image: "/lec1.jpeg",
   },
   {
-    title: "Data Science & Machine Learning",
-    description:
-      "Explore the world of data analysis, AI, and machine learning algorithms.",
-    image: "/team.avif",
+    title: "Guest Lecture",
+    description: "Guest lectures at the college by our trained instructors.",
+    image: "/lec2.jpeg",
   },
   {
-    title: "Digital Marketing Strategies",
-    description:
-      "Master digital marketing tactics to grow your online presence and business.",
-    image: "/team.avif",
+    title: "Guest Lecture",
+    description: "Guest lectures at the college by our trained instructors.",
+    image: "/lec3.jpeg",
   },
 ];
 
