@@ -1,11 +1,46 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import {
+  FaReact,
+  FaNodeJs,
+  FaDatabase,
+  FaHtml5,
+  FaCss3Alt,
+  FaPhp,
+  FaJsSquare,
+} from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiTailwindcss,
+  SiMongodb,
+  SiMetasploit,
+  SiPortswigger,
+  SiOwasp,
+  SiWireshark,
+  SiKalilinux,
+} from "react-icons/si";
 import { useInView } from "react-intersection-observer";
 
 const technologies = [
+  {
+    name: "HTML",
+    icon: <FaHtml5 size={50} className="text-orange-500" />,
+    description:
+      "The foundational technologies for building and styling web pages.",
+  },
+  {
+    name: "CSS",
+    icon: <FaCss3Alt size={50} className="text-blue-500" />,
+    description:
+      "A language for styling HTML and XML documents, controlling layout and design.",
+  },
+  {
+    name: "JavaScript",
+    icon: <FaJsSquare size={50} className="text-yellow-500" />,
+    description:
+      "A versatile scripting language used for both frontend and backend development.",
+  },
   {
     name: "React",
     icon: <FaReact size={50} className="text-blue-500" />,
@@ -31,6 +66,49 @@ const technologies = [
     name: "Tailwind CSS",
     icon: <SiTailwindcss size={50} className="text-cyan-500" />,
     description: "A utility-first CSS framework for modern designs.",
+  },
+
+  {
+    name: "PHP",
+    icon: <FaPhp size={50} className="text-blue-600" />,
+    description:
+      "A server-side scripting language designed for web development.",
+  },
+  {
+    name: "MongoDB",
+    icon: <SiMongodb size={50} className="text-green-600" />,
+    description: "A NoSQL database known for its scalability and flexibility.",
+  },
+  // Added cybersecurity-related technologies with react-icons
+  {
+    name: "OWASP",
+    icon: <SiOwasp size={50} className="text-red-500" />, // Using a shield icon
+    description:
+      "A global community focused on improving the security of software. OWASP provides open-source tools for secure coding practices.",
+  },
+  {
+    name: "PortSwigger",
+    icon: <SiPortswigger size={50} className="text-orange-600" />, // Using a shield icon
+    description:
+      "A leader in web security with tools like Burp Suite, designed for penetration testing and vulnerability scanning.",
+  },
+  {
+    name: "Metasploit",
+    icon: <SiMetasploit size={50} className="text-blue-600" />, // Similar to #1165b0
+    description:
+      "A powerful penetration testing framework used to identify and exploit vulnerabilities in software and networks.",
+  },
+  {
+    name: "Kali Linux",
+    icon: <SiKalilinux size={50} className="text-blue-600" />, // Similar to #2673f7
+    description:
+      "A Debian-based Linux distribution designed for advanced penetration testing and security auditing, used by security professionals and ethical hackers.",
+  },
+  {
+    name: "Wireshark",
+    icon: <SiWireshark size={50} className="text-cyan-500" />,
+    description:
+      "A network protocol analyzer used for capturing and analyzing network traffic, often used for troubleshooting and security analysis.",
   },
 ];
 
