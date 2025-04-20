@@ -1219,7 +1219,7 @@ const Curriculum = () => {
                                 size={18}
                                 className="mr-2 text-blue-600"
                               />
-                              {module.title}
+                              <span className="w-full">{module.title}</span>
                             </h4>
                             <motion.div
                               animate={{
@@ -1259,7 +1259,7 @@ const Curriculum = () => {
                                       transition={{ delay: 0.03 * pointIndex }}
                                     >
                                       <span className="inline-block h-2 w-2 rounded-full bg-blue-600 mt-2 mr-2"></span>
-                                      <span className="text-gray-700">
+                                      <span className="text-gray-700 w-full">
                                         {point}
                                       </span>
                                     </motion.li>

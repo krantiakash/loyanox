@@ -132,7 +132,7 @@ const Pricing = () => {
                     key={i}
                     className={`flex items-center ${
                       isHighlight ? "text-gray-300" : "text-gray-700"
-                    }`}
+                    } gap-2`}
                   >
                     <CheckCircle
                       className={`mr-2 ${
@@ -140,7 +140,7 @@ const Pricing = () => {
                       }`}
                       size={20}
                     />
-                    {feature}
+                    <span className="w-full">{feature}</span>
                   </li>
                 ))}
               </ul>
