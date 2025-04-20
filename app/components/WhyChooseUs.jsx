@@ -22,12 +22,6 @@ const strengths = [
   },
 ];
 
-const statistics = [
-  { value: "10+", label: "Clients" },
-  { value: "8+", label: "Years of Experience" },
-  { value: "20+", label: "Successful Projects" },
-];
-
 const WhyChooseUs = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
@@ -73,22 +67,6 @@ const WhyChooseUs = () => {
               {strength.title}
             </h3>
             <p className="mt-2 text-gray-700">{strength.description}</p>
-          </motion.div>
-        ))}
-      </div>
-
-      {/* Statistics */}
-      <div className="mt-16 container mx-auto flex flex-wrap justify-center gap-8 px-6">
-        {statistics.map((stat, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : {}}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
-            className="bg-yellow-500 text-white py-6 px-10 rounded-lg shadow-md text-center"
-          >
-            <h3 className="text-4xl font-bold">{stat.value}</h3>
-            <p className="mt-2 text-lg">{stat.label}</p>
           </motion.div>
         ))}
       </div>

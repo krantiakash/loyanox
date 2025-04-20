@@ -31,7 +31,7 @@ const LectureShowcase = () => {
           transition={{ duration: 0.6 }}
           className="text-4xl font-extrabold text-gray-900"
         >
-          Lecture Showcase
+          Corporate Training
         </motion.h2>
         <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
           Discover our curated lectures that will empower you with the knowledge
